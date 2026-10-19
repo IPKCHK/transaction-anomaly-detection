@@ -1,7 +1,17 @@
 
-# Transaction Fraud Detection System
 
-A full-stack machine learning application that predicts potentially fraudulent credit card transactions using a Random Forest classifier. It provides transaction-level predictions, CSV batch analysis, prediction history, and dashboard statistics.
+# Machine Learning-Based Credit Card Fraud Detection System
+
+A full-stack machine learning prototype that estimates the probability that a credit card transaction is fraudulent using a Random Forest classifier trained on a public, anonymized dataset.
+
+**Important: What this system actually analyzes**
+
+The model was trained on the public Credit Card Fraud Detection dataset, which contains `Time`, `Amount`, and 28 anonymized numerical features (`V1`–`V28`). These anonymized features do not have directly interpretable meanings in the dataset available to this project.
+
+Consequently, this application demonstrates fraud prediction on transactions represented using the dataset's feature format. It does **not** directly analyze merchant names, transaction locations, cardholder identities, purchase descriptions, or other real-world transaction details. It cannot take an arbitrary transaction from a bank and reliably assess it unless that transaction can be represented using the same compatible input features.
+
+The application integrates the trained model with a FastAPI prediction service, an Express backend, a React frontend, and PostgreSQL for authenticated transaction history and dashboard statistics.
+
 
 ## Features
 
@@ -81,6 +91,12 @@ Configure the required environment variables in local `.env` files. Never commit
 
 The dataset contains anonymized transaction features. V1–V28 are transformed features and do not represent ordinary user-entered transaction details.
 
-## Limitations
 
-Predictions are estimates, not proof of fraud. The model is trained on a particular dataset, and performance may differ on real-world transactions.
+## Limitations and Intended Use
+
+- This is a machine learning demonstration, not a production banking fraud detection service.
+- The model uses anonymized dataset features rather than directly interpretable transaction attributes.
+- Arbitrary real-world transaction data cannot be supplied unless it is transformed into the compatible feature representation expected by the model.
+- Predictions are estimates based on learned patterns, not proof that a transaction is fraudulent.
+- Performance on the public dataset does not guarantee equivalent performance on new or real-world transactions.
+
