@@ -1,0 +1,59 @@
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.transaction-table th {
+  background: #f9fafb;
+  color: #475467;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.transaction-table td {
+  font-size: 14px;
+}
+
+.transaction-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.transaction-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.fraud,
+.legitimate {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.fraud {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.legitimate {
+  color: #166534;
+  background: #dcfce7;
+}

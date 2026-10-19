@@ -1,0 +1,25 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node.js
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+# Dataset
+data/*.csv
+
+# Generated files
+.DS_Store
+Thumbs.db
+
+# Local prediction/sample data
+prediction.csv

@@ -1,0 +1,57 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 5%;
+  background: #172554;
+  color: white;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+.nav-account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+@media (max-width: 650px) {
+  .nav-account {
+    flex-wrap: wrap;
+  }
+}
